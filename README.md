@@ -113,8 +113,6 @@ Aplikasi akan berjalan di `http://localhost:5173`.
 
 
 ## 💡 Catatan Tambahan (Opsional - bisa ditambahkan di README):
-
-```markdown
 ## 📊 Struktur Proyek
 
 ```
@@ -140,8 +138,6 @@ library-system/
     ├── index.html
     └── package.json
 ```
-
-
 
 
 
