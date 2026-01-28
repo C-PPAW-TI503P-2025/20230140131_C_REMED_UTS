@@ -99,7 +99,7 @@ const BookDetail = () => {
     }
 
     return (
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto px-4 py-8">
             <button
                 onClick={() => navigate(-1)}
                 className="flex items-center text-gray-600 hover:text-indigo-600 mb-6"

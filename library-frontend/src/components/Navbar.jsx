@@ -6,12 +6,17 @@ const Navbar = () => {
     const { user, logout } = useAuth();
 
     return (
-        <nav className="bg-white shadow-md">
+        <nav className="bg-[#374151] text-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between h-16">
+                <div className="flex justify-between h-16 items-center">
                     <div className="flex items-center">
-                        <Link to="/" className="flex items-center text-indigo-600 font-bold text-xl">
-                            <BookOpen className="h-8 w-8 mr-2" />
+                        <button className="p-2 mr-2 hover:bg-gray-700 rounded-md">
+                            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                        <Link to="/" className="flex items-center font-bold text-xl">
+                            <BookOpen className="h-6 w-6 mr-2" />
                             Library System
                         </Link>
                     </div>
@@ -19,24 +24,24 @@ const Navbar = () => {
                     <div className="flex items-center space-x-4">
                         {user ? (
                             <>
-                                <span className="text-gray-700 flex items-center">
+                                <span className="flex items-center text-gray-300">
                                     <User className="h-4 w-4 mr-1" />
                                     {user.username}
                                 </span>
 
                                 {user.role === 'admin' ? (
                                     <>
-                                        <Link to="/admin" className="text-gray-600 hover:text-indigo-600 flex items-center">
+                                        <Link to="/admin" className="text-gray-300 hover:text-white flex items-center">
                                             <LayoutDashboard className="h-5 w-5 mr-1" />
                                             Dashboard
                                         </Link>
-                                        <Link to="/admin/history" className="text-gray-600 hover:text-indigo-600 flex items-center ml-4">
+                                        <Link to="/admin/history" className="text-gray-300 hover:text-white flex items-center ml-4">
                                             <History className="h-5 w-5 mr-1" />
                                             History
                                         </Link>
                                     </>
                                 ) : (
-                                    <Link to="/history" className="text-gray-600 hover:text-indigo-600 flex items-center">
+                                    <Link to="/history" className="text-gray-300 hover:text-white flex items-center">
                                         <History className="h-5 w-5 mr-1" />
                                         History
                                     </Link>
@@ -52,8 +57,8 @@ const Navbar = () => {
                             </>
                         ) : (
                             <div className="space-x-2">
-                                <Link to="/login" className="text-indigo-600 hover:text-indigo-800 font-medium">Login</Link>
-                                <Link to="/register" className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Register</Link>
+                                <Link to="/login" className="text-gray-300 hover:text-white font-medium">Login</Link>
+                                <Link to="/register" className="bg-white text-gray-900 hover:bg-gray-100 px-4 py-2 rounded-md text-sm font-bold transition-colors">Register</Link>
                             </div>
                         )}
                     </div>

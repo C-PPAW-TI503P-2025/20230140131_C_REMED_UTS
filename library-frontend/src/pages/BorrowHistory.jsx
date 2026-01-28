@@ -24,7 +24,7 @@ const BorrowHistory = () => {
     if (loading) return <div>Loading history...</div>;
 
     return (
-        <div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <h1 className="text-2xl font-bold text-gray-800 mb-6">Borrowing History</h1>
 
             <div className="bg-white rounded-lg shadow overflow-hidden">
