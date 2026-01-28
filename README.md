@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="Screenshot 2026-01-28 145144" src="https://github.com/user-attachments/assets/4d646f60-ce37-47de-bff8-0c8948b62af8" />Sistem Manajemen Perpustakaan
+Sistem Manajemen Perpustakaan
 
 Sistem Manajemen Perpustakaan modern yang dibangun dengan **React** (Frontend) dan **Node.js/Express** (Backend). Aplikasi ini memungkinkan pengguna untuk menelusuri buku, meminjamnya dengan verifikasi geolokasi, dan melihat riwayat peminjaman mereka. Administrator dapat mengelola inventaris buku dan melihat semua log peminjaman.
 
